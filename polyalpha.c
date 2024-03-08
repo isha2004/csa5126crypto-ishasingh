@@ -15,7 +15,7 @@ void encryptVigenere(char *plaintext, char *key) {
         if (isalpha(currentChar)) {
             char base = isupper(currentChar) ? 'A' : 'a';
 
-            // Apply the Vigenère cipher formula
+            // Apply the VigenÃ¨re cipher formula
             encryptedText[i] = (currentChar - base + key[j] - 'A') % 26 + base;
 
             // Move to the next key character
