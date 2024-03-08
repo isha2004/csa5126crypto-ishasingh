@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Function to encrypt a message using the Vigenère cipher with a one-time pad
+// Function to encrypt a message using the VigenÃ¨re cipher with a one-time pad
 void encryptVigenereOneTimePad(char *plaintext, int *keyStream, char *ciphertext) {
     int len = strlen(plaintext);
     int i;
@@ -20,7 +20,7 @@ void encryptVigenereOneTimePad(char *plaintext, int *keyStream, char *ciphertext
     ciphertext[i] = '\0';
 }
 
-// Function to decrypt a message using the Vigenère cipher with a one-time pad
+// Function to decrypt a message using the VigenÃ¨re cipher with a one-time pad
 void decryptVigenereOneTimePad(char *ciphertext, int *keyStream, char *decryptedText) {
     int len = strlen(ciphertext);
     int i;
@@ -45,7 +45,7 @@ int main() {
     // Given key stream
     int keyStream[] = {9, 0, 1, 7, 23, 15, 21, 14, 11, 11, 2, 8, 9};
 
-    // Encrypt the plaintext using the one-time pad Vigenère cipher
+    // Encrypt the plaintext using the one-time pad VigenÃ¨re cipher
     char ciphertext[100];
     encryptVigenereOneTimePad(plaintext, keyStream, ciphertext);
 
